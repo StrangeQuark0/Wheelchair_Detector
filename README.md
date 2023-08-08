@@ -1,6 +1,6 @@
 # Wheelchair_Detector
 
- Add short description of project here > 
+ Add short description of project here > Hello world!
 
 ![add image descrition here](direct image link here)
 
