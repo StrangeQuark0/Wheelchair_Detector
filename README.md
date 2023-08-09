@@ -10,7 +10,7 @@ Add an explanation of the algorithm and how it works. Make sure to include detai
 
 ## Running this project
 
-Part One: Connecting to your Jetson Nano
+# Part One: Connecting to your Jetson Nano
 1. Open the Start menu on your Windows computer and type "Mobile hotspot"
 2. Click on the System Settings link that appears
 3. Ensure "Share my Internet connection with other devices" is enabled
