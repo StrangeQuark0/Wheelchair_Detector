@@ -18,15 +18,20 @@ Add an explanation of the algorithm and how it works. Make sure to include detai
 5. Click on the Application link that appears
 6. Click on the blue button in the bottom left-hand corner to open a Remote Window
 7. In the text box that appears, select "Connect to Host..."
-8. In the text box, type "nvidia@xxx.xxx.xxx.xxx" where the x's represent your Nano's IP address
+8. In the text box, type ```nvidia@xxx.xxx.xxx.xxx``` where the x's represent your Nano's IP address
 9. Enter the Nano's password to confirm (this password is usually "nvidia")
 10. Click on the page icon in the top left to open the Explorer and click "Open Folder"
-12. In the text box that appears, type "/home/nvidia/" and press enter
+12. In the text box that appears, type ```/home/nvidia/``` and press enter
 13. Enter the password to confirm
 14. You have successfully connected to your Jetson Nano!
 
 ### Part Two: Training the Model
-1. In VS Code's Terminal window, type "cd jetson-inference/python/training/classification/data"
-2. type```wget <LINK HERE> -O wheelchair_detector.tar.gz```
+1. In VS Code's Terminal window, type ```cd jetson-inference/python/training/classification/data```
+2. Type ```wget <LINK HERE> -O wheelchair_detector.tar.gz``` to download the dataset
+3. Type ```tar xvzf wheelchair_detector.tar.gz``` to unzip the dataset
+4. Type ```cd jetson-inference```
+5. Type ```./docker/run.sh```
+6. Type ```python3 train.py --model-dir=models/wheelchair_dectector data/wheelchair_dectector```
+7. Type 
 
 [View a video explanation here](video link)
