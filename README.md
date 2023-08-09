@@ -25,6 +25,8 @@ Add an explanation of the algorithm and how it works. Make sure to include detai
 13. Enter the password to confirm
 14. You have successfully connected to your Jetson Nano!
 
-Part Two: 
+### Part Two: Training the Model
+1. In VS Code's Terminal window, type "cd jetson-inference/python/training/classification/data"
+2. type```wget <LINK HERE> -O wheelchair_detector.tar.gz```
 
 [View a video explanation here](video link)
