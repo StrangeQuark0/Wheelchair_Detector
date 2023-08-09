@@ -29,12 +29,17 @@ Add an explanation of the algorithm and how it works. Make sure to include detai
 1. In VS Code's Terminal window, type ```cd jetson-inference/python/training/classification/data```
 2. Type ```wget <LINK HERE> -O wheelchair_detector.tar.gz``` to download the dataset
 3. Type ```tar xvzf wheelchair_detector.tar.gz``` to unzip the dataset
-4. Navigate to the "jetson-inference" directory (```cd jetson-inference```)
+4. Navigate to "jetson-inference" (```cd jetson-inference```)
 5. Type ```./docker/run.sh``` to enter the docker
-6. Type ```python3 train.py --model-dir=models/wheelchair_dectector data/wheelchair_dectector``` to train the model. This can take a while! (optional arguments include: ```--batch-size=<8>```, ```--workers=<2>```, ```--epochs=<35>```)
+6. Navigate to "jetson-inference/python/training/classification" (```cd python/training/classification```)
+7. Type ```python3 train.py --model-dir=models/wheelchair_dectector data/wheelchair_dectector``` to train the model. This can take a while! (optional arguments include: ```--batch-size=<8>```, ```--workers=<2>```, and ```--epochs=<35>```, where <#> represents default values)
 8. Type ```python3 onnx_export.py --model-dir=models/wheelchair_detector``` to export your model
 9. Press ```Ctrl + D``` to exit the docker
 
-### Part Three:
+### Part Three: Running the Model
+1. Navigate to "jetson-inference/python/training/classification"
+2. Type ```NET=models/wheelchair_detector``` to set the NET variable
+3. Type ```DATASET=data/wheelchair_detector``` to set the DATASET variable
+4. Type ```imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt <input> <output>``` where <input> is the relative path of the photo to be analyzed and <output> is the relative path of the to-be exported photo
 
 [View a video explanation here](video link)
