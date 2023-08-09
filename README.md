@@ -29,9 +29,12 @@ Add an explanation of the algorithm and how it works. Make sure to include detai
 1. In VS Code's Terminal window, type ```cd jetson-inference/python/training/classification/data```
 2. Type ```wget <LINK HERE> -O wheelchair_detector.tar.gz``` to download the dataset
 3. Type ```tar xvzf wheelchair_detector.tar.gz``` to unzip the dataset
-4. Type ```cd jetson-inference```
-5. Type ```./docker/run.sh```
-6. Type ```python3 train.py --model-dir=models/wheelchair_dectector data/wheelchair_dectector```
-7. Type 
+4. Navigate to the "jetson-inference" directory (```cd jetson-inference```)
+5. Type ```./docker/run.sh``` to enter the docker
+6. Type ```python3 train.py --model-dir=models/wheelchair_dectector data/wheelchair_dectector``` to train the model. This can take a while! (optional arguments include: ```--batch-size=<8>```, ```--workers=<2>```, ```--epochs=<35>```)
+8. Type ```python3 onnx_export.py --model-dir=models/wheelchair_detector``` to export your model
+9. Press ```Ctrl + D``` to exit the docker
+
+### Part Three:
 
 [View a video explanation here](video link)
