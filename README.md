@@ -85,4 +85,4 @@ Continuous, webcam-enabled use:
 
 This concludes the project's instructional tutorial!
 
-![Youtube](https://youtu.be/M10coJwy4_0)
+[Youtube Tutorial](https://youtu.be/M10coJwy4_0)
