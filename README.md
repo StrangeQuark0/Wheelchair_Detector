@@ -84,3 +84,5 @@ Continuous, webcam-enabled use:
 5. When finished, press `Ctrl + C` to end the process
 
 This concludes the project's instructional tutorial!
+
+![Youtube](https://youtu.be/M10coJwy4_0)
