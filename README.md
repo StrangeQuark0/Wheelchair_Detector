@@ -2,7 +2,15 @@
 
 This project uses a custom-trained AI model and Nvidia's Jetson Nano to identify wheelchairs in webcam footage and send out a ping when one is detected. This project is designed to be integrated with a motorized door so that approaching wheelchair users are spared the need to press a button or open the door manually. 
 
-![add image descrition here](direct image link here)
+---
+
+![Imgur](https://i.imgur.com/UIpCtVrm.jpg)
+![Imgur](https://i.imgur.com/6qRImaom.jpg)
+
+![Imgur](https://i.imgur.com/qlBgixUm.jpg)
+![Imgur](https://i.imgur.com/GqNoL7Jm.jpg)
+
+---
 
 ## The Algorithm
 
@@ -79,5 +87,3 @@ Continuous, webcam-enabled use:
 5. When finished, press `Ctrl + C` to end the process
 
 This concludes the project's instructional tutorial!
-
-[View a video explanation here](video link)
