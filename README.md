@@ -56,7 +56,7 @@ Congratulations, you have finished setting up the data your AI will be trained o
 
 ### Part Three: Training the Model
 1. Using the VS Code Terminal window, navigate to "jetson-inference" (`cd jetson-inference`)
-5. Type `./docker/run.sh` to enter the docker
+5. Type `./docker/run.sh` to enter the docker, entering the password (usually `nvidia`) when prompted
 6. Navigate to "jetson-inference/python/training/classification" (`cd python/training/classification`)
 7. Type `python3 train.py --model-dir=models/wheelchair_dectector data/wheelchair_dectector` to train the model. This can take a while! (optional arguments include: `--batch-size=<8>`, `--workers=<2>`, and `--epochs=<35>`, where <#> represents default values)
 8. Type `python3 onnx_export.py --model-dir=models/wheelchair_detector` to export your model
